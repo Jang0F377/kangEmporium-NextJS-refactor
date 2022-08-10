@@ -19,7 +19,7 @@ export interface Product {
   onSale: boolean;
 }
 
-interface CartItem {
+export interface CartItem {
   product: Product;
   quantity: number;
 }

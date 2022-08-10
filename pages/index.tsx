@@ -13,16 +13,15 @@ interface GetProductProps {
 
 const Home = ({ products }: GetProductProps) => {
   return (
-    <div className="bg-color-primary-variant bg-main">
+    <>
       <Head>
-        <title>My Next App</title>
+        <title>The Emporium</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Header />
       <HomeComponent products={products} />
       <Newsletter />
       <Contact />
-    </div>
+    </>
   );
 };
 

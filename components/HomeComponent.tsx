@@ -8,7 +8,7 @@ interface HomePageProps {
 
 function HomeComponent({ products }: HomePageProps) {
   return (
-    <div className="max-w-7xl  mx-auto text-center mt-10">
+    <div className="max-w-7xl  mx-auto text-center pt-10">
       <div className="bg-white mx-2 rounded-full  lg:p-5 xl:p-8 text-indigo-500">
         <h1 className="text-center mb-2 p-1 xl:tracking-wide xl:pb-4 xl:mb-4 text-3xl md:text-4xl lg:text-5xl xl:text-7xl underline ">
           Welcome

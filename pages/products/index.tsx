@@ -10,8 +10,7 @@ interface ProductsPageProps {
 
 function Products({ products }: ProductsPageProps) {
   return (
-    <div className="bg-color-primary-variant bg-main">
-      <Header />
+    <>
       <div className=" xl:max-w-[90rem]  mx-auto pb-20">
         <h2 className="sr-only">Products</h2>
         <div className="text-center pb-4 mb-4 text-4xl lg:text-7xl underline  mt-10">
@@ -23,7 +22,7 @@ function Products({ products }: ProductsPageProps) {
           ))}
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
