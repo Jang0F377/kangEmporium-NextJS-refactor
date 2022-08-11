@@ -11,7 +11,6 @@ import { LockClosedIcon } from "@heroicons/react/solid";
 import { Disclosure } from "@headlessui/react";
 import { urlFor } from "../../sanity";
 import { useRouter } from "next/router";
-import cart from "../cart";
 
 function Checkout() {
   const router = useRouter();

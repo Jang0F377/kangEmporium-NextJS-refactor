@@ -13,6 +13,8 @@ import {
 } from "@heroicons/react/solid";
 import { RadioGroup, Transition } from "@headlessui/react";
 import { PortableText } from "@portabletext/react";
+import { Comment } from "postcss";
+import Comments from "../../components/Comments";
 
 interface ProductSlugProps {
   product: Product;
@@ -47,7 +49,7 @@ function Product({ product }: ProductSlugProps) {
     return classes.filter(Boolean).join(" ");
   }
   return (
-    <div className="h-screen ">
+    <div className="h-full lg:pb-10">
       <div className="mx-auto px-4 sm:py-16 w-11/12 lg:w-9/12 sm:px-6 bg-gray-200 lg:px-8 rounded mt-10 lg:mb-20 lg:py-8">
         {product ? (
           <div>
@@ -205,6 +207,7 @@ function Product({ product }: ProductSlugProps) {
                 </section>
               </div>
             </div>
+            <Comments comments={product.comments} _id={product._id} />
           </div>
         ) : (
           <div>ERROR</div>
@@ -297,6 +300,9 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   countInStock,
   body,
   onSale,
+  'comments': *[
+    _type == "comment" && product._ref == ^._id && approved == true
+  ]
 }`;
   const product = await sanityClient.fetch(query, { slug: params?.slug });
 

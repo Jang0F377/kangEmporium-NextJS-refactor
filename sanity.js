@@ -11,6 +11,7 @@ export const config = {
    **/
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production",
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  token: process.env.SANITY_API_TOKEN,
   apiVersion: "2022-08-09", // or today's date for latest
   /**
    * Set useCdn to `false` if your application require the freshest possible
