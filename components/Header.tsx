@@ -38,7 +38,7 @@ const Header: React.FC = () => {
   };
   return (
     <div className=" lg:max-w-screen-2xl mx-auto">
-      <header className="bg-indigo-500 rounded-b text-white ">
+      <header className="bg-dodger-blue-dark rounded-b text-white ">
         <nav className="mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
           <div className="w-full py-6 flex justify-between items-center  border-b border-black lg:border-none">
             <div className="flex">
@@ -81,7 +81,7 @@ const Header: React.FC = () => {
                 <>
                   <button
                     type="button"
-                    className="inline-block bg-background-primary py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-transparent hover:text-white hover:border-white"
+                    className="inline-block bg-purple-navy py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-transparent hover:text-white hover:border-white"
                   >
                     Sign in
                   </button>
@@ -244,7 +244,7 @@ const Header: React.FC = () => {
                           <Link href={"/cart"}>
                             <button
                               onClick={() => setDrawer(false)}
-                              className="w-full rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                              className="w-full rounded-md border border-transparent bg-dodger-blue px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-dodger-blue-dark"
                             >
                               Checkout
                             </button>
@@ -255,7 +255,7 @@ const Header: React.FC = () => {
                             or{" "}
                             <button
                               type="button"
-                              className="font-medium text-indigo-600 hover:text-indigo-500"
+                              className="font-medium text-indigo-700 hover:text-indigo-400"
                               onClick={() => setDrawer(false)}
                             >
                               Continue Shopping

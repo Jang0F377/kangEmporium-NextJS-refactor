@@ -26,7 +26,7 @@ function Contact() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3">
             {/* Contact information */}
-            <div className="relative overflow-hidden py-10 px-6 bg-indigo-700 sm:px-10 xl:p-12 rounded-tl rounded-bl">
+            <div className="relative overflow-hidden py-10 px-6 bg-dodger-blue-dark sm:px-10 xl:p-12 rounded-tl rounded-bl">
               <div
                 className="absolute inset-0 pointer-events-none sm:hidden"
                 aria-hidden="true"
@@ -159,7 +159,7 @@ function Contact() {
             </div>
 
             {/* Contact form */}
-            <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
+            <div className="py-10 px-6 sm:px-10 bg-gray-200 lg:col-span-2 xl:p-12">
               <h3 className="text-lg font-medium text-gray-900">
                 Send us a message
               </h3>

@@ -35,8 +35,8 @@ function Checkout() {
     }
   };
   return (
-    <div className="font-inter w-11/12 lg:w-9/12  mx-auto bg-gray-100 rounded mt-10 lg:mt-20">
-      <main className="lg:min-h-full lg:overflow-hidden lg:flex lg:flex-row-reverse">
+    <div className="font-inter w-11/12 lg:w-9/12  mx-auto bg-gray-100 rounded mt-10 lg:mt-20 lg:pb-10">
+      <main className="lg:min-h-fit lg:overflow-hidden lg:flex lg:flex-row-reverse">
         <h1 className="sr-only">Checkout</h1>
 
         {/* Mobile order summary */}

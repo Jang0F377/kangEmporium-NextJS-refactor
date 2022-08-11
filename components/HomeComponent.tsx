@@ -9,13 +9,18 @@ interface HomePageProps {
 function HomeComponent({ products }: HomePageProps) {
   return (
     <div className="max-w-7xl  mx-auto text-center pt-10">
-      <div className="bg-white mx-2 rounded-full  lg:p-5 xl:p-8 text-indigo-500">
+      <div className="group bg-indigo-400 my-7 py-1.5 max-w-sm md:my-14 xl:my-20 rounded-full md:max-w-md lg:max-w-lg xl:max-w-3xl mx-auto md:p-2  lg:p-4 text-white hover:text-black">
         <h1 className="text-center mb-2 p-1 xl:tracking-wide xl:pb-4 xl:mb-4 text-3xl md:text-4xl lg:text-5xl xl:text-7xl underline ">
           Welcome
         </h1>
         <div className="text-center md:text-3xl my-2 xl:text-4xl xl:mb-4 xl:mt-4">
-          Check out our <Link href="/products">Products</Link> page to see our
-          complete stock!
+          Check out our{" "}
+          <Link href="/products">
+            <button className="underline group-hover:text-dodger-blue-light hover:text-dodger-blue-light">
+              Products
+            </button>
+          </Link>{" "}
+          page to see our complete stock!
         </div>
       </div>
       <div>

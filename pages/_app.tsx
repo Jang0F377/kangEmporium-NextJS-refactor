@@ -7,7 +7,7 @@ import Header from "../components/Header";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
-      <div className="font-inter bg-color-primary-variant bg-main">
+      <div className="font-inter bg-dodger-blue-light  bg-main">
         <Header />
         <Component {...pageProps} />
       </div>

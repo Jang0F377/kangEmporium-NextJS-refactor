@@ -43,37 +43,39 @@ function Cart() {
     );
   };
   return (
-    <div className="h-screen mx-auto lg:w-9/12 mt-5 lg:mt-10">
-      <div className="bg-white rounded mt-5 mx-4 sm:mx-6 lg:m-10 p-2 sm:p-6 lg:p-10">
-        <h1 className="text-3xl font-inter font-extrabold tracking-tight text-gray-900 md:text-5xl">
+    <div className="h-fit mx-auto lg:w-9/12 mt-5 lg:mt-10 lg:pb-10">
+      <div className="bg-white lg:h-fit rounded mt-5 mx-4 sm:mx-6 lg:m-10 p-2 sm:p-6 lg:p-10 ">
+        <h1 className="text-3xl font-extrabold pt-1.5 mt-1.5 -mb-6 lg:mb-0 lg:pt-0 text-center lg:text-left  tracking-tight text-gray-900 md:text-4xl lg:text-5xl">
           Shopping Cart
         </h1>
-        <form className="mt-12 lg:grid lg:grid-cols-12 lg:gap-x-12 lg:items-start xl:gap-x-16">
-          <section aria-labelledby="cart-heading" className="lg:col-span-7">
-            <h2 id="cart-heading" className="sr-only">
-              Items in your shopping cart
-            </h2>
-            <ul className="border-t border-b border-gray-200 divide-y divide-gray-200 ">
-              {anythingInCart ? (
-                cartItems.map((item) => (
-                  <CartScreenListComp
-                    key={item.product._id}
-                    product={item}
-                    dispatch={dispatch}
-                  />
-                ))
-              ) : (
-                <EmptyCart />
-              )}
-            </ul>
-          </section>
+        <section className="mt-12 lg:grid lg:grid-cols-12 lg:gap-x-12 lg:items-start xl:gap-x-16 ">
+          <div aria-labelledby="cart-heading" className="lg:col-span-7 p-1.5  ">
+            <div className="">
+              <h2 id="cart-heading" className="sr-only">
+                Items in your shopping cart
+              </h2>
+              <ul className="border-t border-b border-gray-200 divide-y divide-gray-200 ">
+                {anythingInCart ? (
+                  cartItems.map((item) => (
+                    <CartScreenListComp
+                      key={item.product._id}
+                      product={item}
+                      dispatch={dispatch}
+                    />
+                  ))
+                ) : (
+                  <EmptyCart />
+                )}
+              </ul>
+            </div>
+          </div>
           <section
             aria-labelledby="summary-heading"
             className="mt-16 bg-gray-50 rounded-lg px-4 py-6 sm:p-6 lg:p-8 lg:mt-0 lg:col-span-5"
           >
             <CartScreenOrderSummary subtotal={subtotal} tax={Number(tax)} />
           </section>
-        </form>
+        </section>
       </div>
     </div>
   );
@@ -82,6 +84,7 @@ function Cart() {
 export default Cart;
 
 const CartScreenListComp = ({ product, dispatch }: CartScreenListItem) => {
+  console.log(product);
   return (
     <li key={product.product._id} className="flex py-6 sm:py-10">
       <div className="flex-shrink-0">
@@ -110,7 +113,7 @@ const CartScreenListComp = ({ product, dispatch }: CartScreenListItem) => {
               ) : (
                 <div />
               )}
-              {product.product.size[0].name != undefined || null ? (
+              {product.product.size[0].name ? (
                 <p className="ml-4 pl-4 border-l border-gray-200 text-gray-500">
                   {product.product.size[0].name}
                 </p>
@@ -246,7 +249,7 @@ function CartScreenOrderSummary({ tax, subtotal }: CartSummaryProps) {
         <Link href="/checkout">
           <button
             type={"submit"}
-            className="w-full bg-indigo-600 border border-transparent rounded-md shadow-sm py-3 px-4 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500"
+            className="w-full bg-dodger-blue border border-transparent rounded-md shadow-sm py-3 px-4 text-base font-medium text-white hover:bg-dodger-blue-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500"
           >
             Checkout
           </button>
