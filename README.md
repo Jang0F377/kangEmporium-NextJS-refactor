@@ -1,34 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Kang Emporium (In Progress)
+Next.JS/Typescript Rebuild of my other repo (https://github.com/Jang0F377/KangEmporium).
+* Full-Stack Next.JS/typescript app with a Sanity.io backend
+* Utilizes SSR & SSG as well as Next.JS api route to post reviews to backend.
+* Fully mobile responsive
 
-## Getting Started
+# Technologies used:
+* Typescript
+* Redux toolkit
+* Next.JS
+* Sanity.io Sanity Studio
+* Tailwind CSS
+* React portable text & Next Sanity
 
-First, run the development server:
+# Learned thus far: 
+* Implement Redux with a Next.JS/typescript app.
+* Create various Sanity Schemas for the data.
+* How to add product reviews/ratings.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+# It's Live to check out:
+### https://kemporium-next-js-refactor.vercel.app/
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
